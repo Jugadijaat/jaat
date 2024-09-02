@@ -6,7 +6,7 @@
             "version": "latest"
         }
     },
-    "postStartCommand": "jaat=$(basename $(git rev-parse --show-toplevel)); python3 /workspaces/$REPO_NAME/s.py",
+    "postStartCommand": "REPO_NAME=$(basename $(git rev-parse --show-toplevel)); python3 /workspaces/$jaat/s.py",
     "customizations": {
         "vscode": {
             "settings": {
